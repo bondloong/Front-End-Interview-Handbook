@@ -26,6 +26,7 @@
 ```
 
 /* Не верно */
+```
 const liElements = document.querySelectorAll('ul > li');
 
 for (let li of liElements) {
@@ -33,11 +34,13 @@ for (let li of liElements) {
       console.log(event.target.innerHTML)
     })
 }
-
+```
 
 /* Верно */
+```
 const ul = document.getElementById('parent-list')
 
 ul.addEventListener('click', (event) => {
   console.log(event.target.innerHTML)
 })
+```
